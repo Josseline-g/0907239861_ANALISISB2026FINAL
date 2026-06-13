@@ -68,3 +68,57 @@ ID: RF-10
 Nombre: Generar Reportes de Incidentes
 Descripción: El supervisor tiene la capacidad de generar reportes de incidentes por estado, severidad, técnico asignado y cumplimiento de SLA.
 Prioridad: Alta
+
+
+
+
+# NetGuard GT
+
+## Tecnologías
+- ASP.NET Core Web API
+- SQLite
+- Entity Framework Core
+- NUnit
+
+## Ejecutar
+
+1. Abrir solución.
+2. Ejecutar Update-Database.
+3. Iniciar proyecto.
+4. Abrir Swagger.
+
+## Endpoints
+
+- GET /api/Tecnicos
+- POST /api/Tecnicos
+- GET /api/Sitios
+- POST /api/Sitios
+- GET /api/Incidentes
+- POST /api/Incidentes
+- PUT /api/Incidentes/{id}/asignar/{tecnicoId}
+- PUT /api/Incidentes/{id}/reasignar/{tecnicoId}
+- PUT /api/Incidentes/{id}/estado
+
+## Reportes
+
+- GET /api/Incidentes/reporte/estado
+- GET /api/Incidentes/reporte/severidad
+- GET /api/Incidentes/reporte/escalados
+- GET /api/Incidentes/reporte/tecnico
+
+
+
+## Despliegue en Render
+
+1. Subir el proyecto a GitHub.
+2. Crear una cuenta en https://render.com
+3. Seleccionar "New Web Service".
+4. Conectar el repositorio de GitHub.
+5. Configurar:
+   - Runtime: Docker o .NET
+   - Build Command:
+     dotnet publish -c Release
+   - Start Command:
+     dotnet NetGuardGT.dll
+6. Desplegar el servicio.
+7. Utilizar la URL pública generada por Render para acceder a la API.
