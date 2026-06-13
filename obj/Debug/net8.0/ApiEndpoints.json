@@ -1,0 +1,263 @@
+[
+  {
+    "ContainingType": "NetGuard_GT.Controllers.IncidentesController",
+    "Method": "GetIncidentes",
+    "RelativePath": "api/Incidentes",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[NetGuard_GT.Models.Incidente, NetGuard GT, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "NetGuard_GT.Controllers.IncidentesController",
+    "Method": "CrearIncidente",
+    "RelativePath": "api/Incidentes",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "incidente",
+        "Type": "NetGuard_GT.Models.Incidente",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "NetGuard_GT.Models.Incidente",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "NetGuard_GT.Controllers.IncidentesController",
+    "Method": "CambiarEstado",
+    "RelativePath": "api/Incidentes/{id}/estado",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "nuevoEstado",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "NetGuard_GT.Controllers.IncidentesController",
+    "Method": "AsignarTecnico",
+    "RelativePath": "api/Incidentes/{incidenteId}/asignar/{tecnicoId}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "incidenteId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "tecnicoId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "NetGuard_GT.Controllers.IncidentesController",
+    "Method": "ReasignarTecnico",
+    "RelativePath": "api/Incidentes/{incidenteId}/reasignar/{nuevoTecnicoId}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "incidenteId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "nuevoTecnicoId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "NetGuard_GT.Controllers.IncidentesController",
+    "Method": "GetHistorial",
+    "RelativePath": "api/Incidentes/historial",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[NetGuard_GT.Models.HistorialIncidente, NetGuard GT, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "NetGuard_GT.Controllers.IncidentesController",
+    "Method": "ReporteEscalados",
+    "RelativePath": "api/Incidentes/reporte/escalados",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "NetGuard_GT.Controllers.IncidentesController",
+    "Method": "ReportePorEstado",
+    "RelativePath": "api/Incidentes/reporte/estado",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "NetGuard_GT.Controllers.IncidentesController",
+    "Method": "ReportePorSeveridad",
+    "RelativePath": "api/Incidentes/reporte/severidad",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "NetGuard_GT.Controllers.IncidentesController",
+    "Method": "ReportePorTecnico",
+    "RelativePath": "api/Incidentes/reporte/tecnico",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "NetGuard_GT.Controllers.SitiosController",
+    "Method": "GetSitios",
+    "RelativePath": "api/Sitios",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[NetGuard_GT.Models.SitioRed, NetGuard GT, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "NetGuard_GT.Controllers.SitiosController",
+    "Method": "CrearSitio",
+    "RelativePath": "api/Sitios",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "sitio",
+        "Type": "NetGuard_GT.Models.SitioRed",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "NetGuard_GT.Models.SitioRed",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "NetGuard_GT.Controllers.TecnicosController",
+    "Method": "GetTecnicos",
+    "RelativePath": "api/Tecnicos",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[NetGuard_GT.Models.Tecnico, NetGuard GT, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "NetGuard_GT.Controllers.TecnicosController",
+    "Method": "CrearTecnico",
+    "RelativePath": "api/Tecnicos",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "tecnico",
+        "Type": "NetGuard_GT.Models.Tecnico",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "NetGuard_GT.Models.Tecnico",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  }
+]
